@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/index.css">
+    <script type="module" src="../dist/index.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="title">Drustvena mreza</h1>
+        <ul class="nav-links">
+            <li><a href="#">Grupe</a></li>
+            <li><a href="#">Korisnici</a></li>
+        </ul>
+    </nav>
+
+    <section class="site-description">
+        <hr>
+        <h2>Pregled Korisnika</h2>
+        <hr>
+        <button onclick="window.location.href='./userForm/userForm.html'">Dodaj korisnika</button>
+        <hr>
+        <p id="success-msg"></p>
+    </section>
+    
+    <section class="main-content">
+        <table class="user-data">
+            <thead class="user-data-head">
+                <tr>
+                    <th>Korisničko Ime</th> 
+                    <th>Ime</th> 
+                    <th>Prezime</th> 
+                    <th>Datum rodjenja</th>                     
+                    <th>Izmena</th>
+                    <th>Brisanje</th>
+                    <th>Grupa</th>                     
+                </tr>
+            </thead>
+            <tbody id="user-data-body">
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>
